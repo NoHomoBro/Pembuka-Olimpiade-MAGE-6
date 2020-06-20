@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Olimpiade MAGE 6</title>
+    </head>
+
+    <body class="bodyStart">
+        <!-- Loader -->
+        <div class="wrapperLoader">
+            <span class="loader"><img src="assets/mageputih1.png"></span>
+        </div>
+        <!-- Teks Cerita -->
+        <div class="wrapperStart">
+            <h2>
+                Cerita sejauh ini...
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque, metus id interdum vestibulum, nulla dui dictum risus, eu lacinia nisl dolor quis nisi. Nam finibus ante quis dui tempus, nec luctus magna placerat. Pellentesque quis ex at quam condimentum molestie. Cras sit amet faucibus augue. Praesent malesuada, nisl nec porta sagittis, ex ante volutpat lorem, vitae facilisis risus ligula eget purus. Nullam id dolor elementum, hendrerit odio lacinia, tempus enim. Morbi ut mauris velit. Integer fringilla porttitor nisl, sit amet finibus arcu volutpat eu. In id nisl sodales urna mattis efficitur venenatis et sem. Praesent in magna at arcu consequat feugiat. Nam luctus viverra dui sit amet commodo. Sed sed fermentum nunc.
+            </p>
+            <p>
+                In hac habitasse platea dictumst. Donec ut sem finibus, interdum nisi non, varius orci. In quis mauris quis dolor molestie auctor vitae vel odio. Nullam at blandit odio. Ut tincidunt ac ex eu rutrum. Nulla pulvinar eget urna non vulputate. Mauris laoreet nec velit a pharetra. Nam aliquet, diam ultricies condimentum aliquet, ante nibh rutrum leo, sit amet suscipit odio felis vitae nisl. Nulla aliquam, justo eget euismod pretium, dolor orci tempor dui, vel vestibulum quam libero id eros. Mauris pharetra pulvinar dolor ac euismod. Morbi congue dolor id lorem lacinia, placerat aliquam augue pulvinar. Duis metus felis, imperdiet et risus nec, tempus luctus quam. Nullam enim tortor, vulputate in neque tristique, porta varius lectus. Morbi rhoncus ultricies lobortis. Suspendisse vel accumsan elit.
+            </p>
+            <p>
+                Etiam a neque magna. Sed sit amet pretium diam, id finibus eros. Aenean pellentesque libero in viverra sollicitudin. Vestibulum sit amet enim leo. Suspendisse maximus magna quis tincidunt euismod. Proin facilisis blandit nisl vel porttitor. Proin sollicitudin rutrum condimentum. Cras facilisis laoreet lacus, ut pulvinar arcu ultricies at.
+            </p>
+            <p>
+                Mauris malesuada ac mi eu lacinia. Phasellus malesuada arcu nec lacus sagittis, ac rutrum nibh gravida. Vivamus in sollicitudin augue. Sed at lacus vel leo maximus porttitor. In vitae urna non massa porttitor tincidunt. Suspendisse fermentum, turpis vitae ornare iaculis, risus massa dignissim orci, sit amet vestibulum mi erat nec orci. Cras lectus tellus, ultrices tempus tincidunt quis, aliquam ut magna. Phasellus blandit nunc in ultrices posuere. Phasellus dolor dolor, interdum ac libero a, faucibus tempus sapien. Vivamus elementum lorem non lorem accumsan, et laoreet ligula vehicula. Vestibulum porta aliquam sodales. Sed at lacus tempor, elementum lorem quis, auctor diam. Fusce nulla lorem, efficitur sit amet pulvinar eu, scelerisque ac sem.
+            </p>
+            <div>
+                <a href="main.html"><img src="assets/exit1.png" class="backButton" onmouseover="this.src='assets/exit2.png';" onmouseout="this.src='assets/exit1.png';"></a>
+                <a href=""><img src="assets/next1.png" class="startButton" onmouseover="this.src='assets/next2.png';" onmouseout="this.src='assets/next1.png';"></a>
+            </div>
+        </div>
+        <div class="wrapperFooter">
+            <!-- Kembali ke Dashboard -->
+            <a href="#dashboard"><img src="assets/magekuning.png"></a>
+        </div>
+        <script src="app.js"></script>
+        <script>
+            window.addEventListener("load", function(){
+                var loader = document.querySelector('.loader');
+                loader.classList.add('hidden');
+            });
+        </script>
+    </body>

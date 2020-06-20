@@ -1,0 +1,288 @@
+@font-face{
+    font-family: 'airstrike';
+    src: url(assets/airstrike.ttf);
+}
+
+@font-face{
+    font-family: 'rubik-medium';
+    src: url(assets/Rubik-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'rubik-regular';
+    src: url(assets/Rubik-Regular.ttf);
+}
+
+.bodyMain{
+    display: grid;
+    grid-template-rows: 1fr;
+    background: url(assets/bg1.png) no-repeat top center;
+    background-size: cover;
+}
+
+.bodyStart{
+    display: grid;
+    grid-template-rows: 1fr;
+    background: url(assets/bg.png) no-repeat top center;
+    background-size: cover;
+}
+
+.wrapperMain{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 50px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0% 0% 20% 0;
+    transition: 0.5s;
+}
+
+.playButton{
+    position: relative;
+    width: 35vw;
+    min-width: 200px;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in;
+}
+
+.rulesButton{
+    position: relative;
+    width: 20vw;
+    min-width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in;
+}
+
+.startButton{
+    position: relative;
+    width: 10vw;
+    min-width: 70px;
+    cursor: pointer;
+    float: right;
+}
+
+.backButton{
+    position: relative;
+    width: 10vw;
+    min-width: 70px;
+    cursor: pointer;
+    float: left;
+}
+
+.rulesModal-bg{
+    position: fixed;
+    background: none;
+    width: 100%;
+    height: 100vh;
+    top: -10%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+.bg-active{
+    visibility: visible;
+    top: 50%;
+    opacity: 1;
+    transition: 0.5s;
+}
+.bg-inactive{
+    visibility: hidden;
+    top: -50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.rulesModalButton{
+    background: none;
+    border: none;
+}
+
+.rulesModal{
+    display: grid;
+    grid-template-rows: 1fr;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 40px 40px 40px;
+    width: 80vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    white-space: pre-line;
+}
+.rulesModal h2{
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    color: white;
+    text-align: center;
+    font-family: rubik-regular;
+    font-size: calc(16px + 0.5vw);
+}
+.rulesModal p{
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    color: white;
+    text-align: justify;
+    font-family: rubik-regular;
+    font-size: calc(8px + 0.5vw);
+}
+.rulesModal img{
+    display: block;
+    width: 10vw;
+    min-width: 65px;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+}
+
+.wrapperLogo{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15% 0% 10% 0;
+}
+
+.logo1{
+    display: block;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    animation: fadeInUp 1s ease-in;
+}
+
+.wrapperStart{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 15% 10% 15%
+}
+.wrapperStart h2{
+    color: white;
+    position: relative;
+    font-family: airstrike;
+    font-size: calc(20px + 0.5vw);
+    text-align: center;
+    animation: fadeInUp 1s ease-in;
+}
+.wrapperStart p{
+    color: white;
+    position: relative;
+    font-family: rubik-medium;
+    font-size: calc(10px + 0.5vw);
+    text-align: justify;
+    animation: fadeIn 2s ease-in;
+}
+.wrapperStart div{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    animation: fadeIn 2s ease-in;
+}
+
+.wrapperLoader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.loader:before{
+    content: "";
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 50%;
+    border-top: 5px solid white;
+    border-right: solid transparent;
+    animation: spinner 0.7s ease infinite;
+}
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.wrapperFooter{
+    display: grid;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.wrapperFooter img{
+    display: block;
+    position: relative;
+    width: 30vw;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 4s ease-in;
+}
+
+@keyframes spinner{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        visibility: 0;
+    }
+    50%{
+        opacity: 0;
+        visibility: 0;
+    }
+    100%{
+        opacity: 1;
+        visibility: 1;
+    }
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        visibility: 0;
+        transform: translateY(100%)
+    }
+    100%{
+        opacity: 1;
+        visibility: 1;
+    }
+}
